@@ -4,20 +4,20 @@
 
 - This is the challenge at the end of module 2 of the EDX Front End Bootcamp
 - To create a portfolio page to showcase any projects we have created
-- Utilising Flexbox and grid, HTML & CSS
-- Incorporate any work completed so far as content
+- Utilising Flexbox, CSS Grid, HTML & CSS
+- Incorporates any work completed so far as content, using images as placeholders for future work
 
 ## Installation
 
 NA - Website hosted on Github Pages
 
-<insert link here>
+https://benjistealth.github.io/personal_webdev_portfolio/
 
 ## Usage
 
 - Visit the page on Github pages to view my portfolio and click through to any past projects
 
-<insert link here>
+https://benjistealth.github.io/personal_webdev_portfolio/ 
 
 ## Credits
 

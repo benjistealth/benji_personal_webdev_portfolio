@@ -6,43 +6,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> not sure why we have this but not in any previous ?-->
   <title>WebDev-Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" alt="Penguin favicon">
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
     <h1>WebDev-Portfolio</h1>
-    <nav>
-    </nav>
+    <div class="nav">
+      <a href="#item1">link to Main Project</a>
+      <a href="#item2">link to Project 2</a>
+      <a href="#item3">link to Project 3</a>
+      <a href="#item4">link to Project 4</a>
+      <a href="#item5">link to Project 5</a>
+      <a href="#contact">link to contact details</a>
+    </div>
   </header>
 
-  <!-- hero banner --seriously WTF is up with all the hero stuff ?? Am I missing something ? -->
-  <section class="hero-banner">
+  <section class="about">
     <div>
-      <h2>Show-case-1</h2>
+      <h2>About Me</h2>
+      <p>Here is a little bit of text to tell you about me and how awsome I am and stuff.
+      <p>Probably another bit of text about things I like to do etc</p>
+    </div>
+    <div>
+      <img src="../images/avatar.jpg" alt="Penguin with PCB on stomach as personal avatar">
     </div>
   </section>
+  <div class="item1">
+    <div class="project">
+        <h1>Project 1</h1>
+        <p>Here is my most recent project, it contains all of the latest technologies I have used.</p>
+    </div>
+  </div>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <p>Learning web front end, well trying to :-/</p>
-    </section>
+  <content class="content-grid">
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-      <p>I try to avoid doing any where possible</p>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>Seriously, don't bother</p>
-    </section>
-  </main>
+      <div class="item2">
+        <div class="project">
+                <h1>Project 2</h1>
+                <p>Here is a previous project that I completed.</p>
+            </div>
+      </div>
+      <div class="item3">
+        <div class="project">
+                <h1>project 3</h1>
+                <p>Here is another previously completed project.</p>
+            </div>
+      </div>
+      <div class="item4">
+        <div class="project">
+                <h1>project 4</h1>
+                <p>Here is another previously completed project.</p>
+            </div>
+      </div>
+      <div class="item5">
+        <div class="project">
+                <h1>project 5</h1>
+                <p>Here is another previously completed project.</p>
+            </div>
+      </div>
+</div>
+  
+  </content>
 </body>
+
+<footer>
+  <section class="contact">
+    <h2>Ben Shingleton</h2>
+        <p>Learning web front end, well trying to :-/</p>
+    <h2>Work</h2>
+        <p>I try to avoid doing any where possible</p>
+    <h2>Contact Me</h2>
+        <p>Here are my mock contact details</p>
+        <p>Tel: 07779995554</p>
+        <p>Email: something@somewhere.com</p>
+        <p>All the social Medias Here !</p>
+  </section>
+
+</footer>
 
 </html>
