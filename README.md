@@ -13,7 +13,7 @@
   <img alt="Screenshot_1" src="assets\images\screenshot_1.png">
 </p>
     <p align="center">
-  <img alt="Screenshot_1" src="assets\images\screenshot_1.png">
+  <img alt="Screenshot_1" src="assets\images\screenshot_2.png">
 </p>
 
 ## Installation
