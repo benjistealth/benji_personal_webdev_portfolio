@@ -9,8 +9,8 @@
 
 ## Screenshot of deployed application
 
-    ![ScreenShot](./assets/images/screenshot_1.jpg)
-    ![ScreenShot](./assets/images/screenshot_2.jpg)
+    [ScreenShot](./assets/images/screenshot_1.jpg)
+    [ScreenShot](./assets/images/screenshot_2.jpg)
 
 ## Installation
 
