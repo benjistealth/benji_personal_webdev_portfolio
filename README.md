@@ -9,8 +9,8 @@
 
 ## Screenshot of deployed application
 
-    ![ScreenShot](./assets/images/screenshot_1.jpg)
-    ![ScreenShot](./assets/images/screenshot_2.jpg)
+    ![ScreenShot](https://github.com/benjistealth/personal_webdev_portfolio/blob/main/assets/images/screenshot_1.png?raw=true)
+    ![ScreenShot](https://github.com/benjistealth/personal_webdev_portfolio/blob/main/assets/images/screenshot_2.png?raw=true)
 
 ## Installation
 
