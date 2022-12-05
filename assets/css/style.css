@@ -12,9 +12,8 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
+  /* display: flex;
+  flex-direction: column; */
   margin: 0px;
   padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -24,27 +23,27 @@ body {
 
 header {
   display: flex;
-  flex-direction: column;
-  /* align-items: center; */
+  /* flex-direction: column; */
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   height: 100px;
   width: 100%;
-  background-color: var(--colourBG);
+  /* background-color: var(--colourBG); */
   color: var(--colourBright);
   background-image: url("../images/02-hero-bg.jpg");
 }
 
 .nav {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  height: auto;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.733);
+  height: 15 px;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: rgba(0, 0, 0, 0.869);
 }
 
-header .nav  a {
+.nav  a {
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -57,34 +56,34 @@ header .nav  a {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  /* padding: 10px; */
-  margin: 0;
   height: 150px;
-  font-size: medium;
+  order: 1;
+}
+
+.about,
+h1,
+h2 {
+  font-size: xx-large;
   color: var(--colourBright);
 }
 
-.about img {
+li {
   display: flex;
-  justify-content: flex-start;
+  color: var(--colourBG);
+  font-size:large;
+  flex-wrap: wrap;
+}
+
+img {
+  display: flex;
   height: 150px;
   width: 150px;
   margin: 0;
 }
 
-/* .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-} */
-
 .content-grid {
   margin: 0px 0%;
   display: grid;
-  /* align-items: center; */
   justify-content: center;
   min-height: 500px;
   height: 70vh;
@@ -95,20 +94,17 @@ header .nav  a {
   "item4 item5";
 }
 
-
-
 .item1 {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   color: var(--colourBG);
   width: 100%;
   height: 250px;
-  justify-content: flex-start;
-  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
   background-image: url("../images/02-portfolio-1.jpg");
-  outline: 2px var(--colourBoarder);
+  /* outline: 2px var(--colourBoarder);
   outline-offset: -2px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; */
 }
 
 .item2 {

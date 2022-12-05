@@ -16,7 +16,7 @@
 ## Screenshot of bottom of page of deployed application
 
     <p align="center">
-  <img alt="Screenshot_1" src="assets\images\screenshot_2.png">
+  <img alt="Screenshot_2" src="assets\images\screenshot_2.png">
 </p>
 
 ## Installation
