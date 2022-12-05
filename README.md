@@ -4,8 +4,13 @@
 
 - This is the challenge at the end of module 2 of the EDX Front End Bootcamp
 - To create a portfolio page to showcase any projects we have created
-- Utilising Flexbox, CSS Grid, HTML & CSS
+- Utilising Flexbox, CSS Grid, HTML & CSS, with Media queries and CSS variables
 - Incorporates any work completed so far as content, using images as placeholders for future work
+
+## Screenshot of deployed application
+
+    ![ScreenShot](./assets/images/screenshot_1.jpg)
+    ![ScreenShot](./assets/images/screenshot_2.jpg)
 
 ## Installation
 
