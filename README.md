@@ -7,11 +7,14 @@
 - Utilising Flexbox, CSS Grid, HTML & CSS, with Media queries and CSS variables
 - Incorporates any work completed so far as content, using images as placeholders for future work
 
-## Screenshot of deployed application
+## Screenshot of top of page of deployed application
 
     <p align="center">
   <img alt="Screenshot_1" src="assets\images\screenshot_1.png">
 </p>
+
+## Screenshot of bottom of page of deployed application
+
     <p align="center">
   <img alt="Screenshot_1" src="assets\images\screenshot_2.png">
 </p>
