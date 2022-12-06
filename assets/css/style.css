@@ -56,8 +56,6 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  /* height: 150px;
-  order: 1; */
 }
 
 .about,
@@ -102,38 +100,46 @@ img {
 
 .top-left {
     position: absolute;
-    top: 8px;
+    top: 50px;
     left: 16px;
-    background-color: var(--colourHighlight);
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    /* background-color: var(--colourHighlight); */
 }
 
 .bottom-left {
   position: absolute;
-  font-size: large;
-  padding: 10px;
-  bottom: 8px;
+  bottom: 60px;
   left: 16px;
-  background-color: var(--colourHighlight);
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+  /* background-color: var(--colourHighlight); */
 }
 
 
 .item1 {
   position: relative;
-  border-style:solid;
-  border-color: var(--colourHighlight);
-  border-width: 5px;
+  /* border-style:solid; */
+    border: 2px solid var(--colourBG);
+  /* border-color: var(--colourHighlight); */
+  /* border-width: 5px; */
   /* position: relative; */
   /* margin: -4rem 0 1.5rem 0;
   padding: 0.5rem 1rem; */
   background-color: var(--colourBG);
   color: var(--colourBoarder);
-  /* border: 2px solid var(--gin); */
+
   /* border-radius: 8px; */
   transition: all 0.5s ease-in-out;
 }
 
 item1:hover {
-  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+  box-shadow: inset 0px 0px 8px var(--colourBoarder), 0 0 15px var(--colourBoarder);
 }
 
 .item1 img {
