@@ -12,8 +12,8 @@
 }
 
 body {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   margin: 0px;
   padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -23,12 +23,9 @@ body {
 
 header {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
   height: 100px;
   width: 100%;
-  /* background-color: var(--colourBG); */
   color: var(--colourBright);
   background-image: url("../images/02-hero-bg.jpg");
 }
@@ -43,7 +40,7 @@ header {
   background-color: rgba(0, 0, 0, 0.869);
 }
 
-.nav  a {
+.nav a {
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -58,20 +55,17 @@ header {
   justify-content: space-between;
 }
 
-.about,
-h1,
-h2 {
-  font-size: xx-large;
+about h1 {
+  font-size: x-large;
 }
 
 li {
   display: flex;
   color: var(--colourBG);
-  font-size:large;
-  flex-wrap: wrap;
+  font-size: large;
 }
 
-img {
+.about img {
   display: flex;
   height: 150px;
   width: 150px;
@@ -82,64 +76,47 @@ img {
   margin: 0px 0%;
   display: grid;
   justify-content: center;
+  font-weight: bold;
   min-height: 500px;
   height: 70vh;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "item2 item3"
-  "item4 item5";
+    "item2 item3"
+    "item4 item5";
 }
 
-/* .item1 p {
-  display: flex;
-  position: relative;
-  text-align: center;
-  color: rgb(12, 12, 12);
-} */
-
 .top-left {
-    position: absolute;
-    top: 50px;
-    left: 16px;
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: large;
-    font-weight: bold;
-    padding: 5px;
-    /* background-color: var(--colourHighlight); */
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
 }
 
 .bottom-left {
+  font-weight: bold;
   position: absolute;
   bottom: 60px;
   left: 16px;
   font-size: large;
   font-weight: bold;
   padding: 5px;
-  /* background-color: var(--colourHighlight); */
 }
 
 
 .item1 {
   position: relative;
-  /* border-style:solid; */
-    border: 2px solid var(--colourBG);
-  /* border-color: var(--colourHighlight); */
-  /* border-width: 5px; */
-  /* position: relative; */
-  /* margin: -4rem 0 1.5rem 0;
-  padding: 0.5rem 1rem; */
+  border: 2px solid var(--colourBG);
   background-color: var(--colourBG);
   color: var(--colourBoarder);
-
-  /* border-radius: 8px; */
   transition: all 0.5s ease-in-out;
 }
 
 item1:hover {
-  box-shadow: inset 0px 0px 8px var(--colourBoarder), 0 0 15px var(--colourBoarder);
+  border-color: blue;
 }
 
 .item1 img {
@@ -148,23 +125,28 @@ item1:hover {
   color: var(--colourBG);
   width: 100%;
   height: 250px;
-
-  /* justify-content: flex-start; */
-  /* background-image: url("../images/02-portfolio-1.jpg"); */
-  /* outline: 2px var(--colourBoarder);
-  outline-offset: -2px;
-  transition: all 0.5s ease-in-out; */
+  font-weight: bold;
 }
 
 .item2 {
   display: flex;
-  /* flex-direction: row; */
-  background-image: url("../images/02-portfolio-2.jpg");
-  /* text-decoration: none; */
+  position: relative;
+  color: var(--colourBG);
+  border: 2px solid var(--colourBG);
+  font-weight: bold;
+}
+
+.item2 img {
+  display: flex;
+  color: var(--colourBG);
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
 }
 
 .item3 {
   display: flex;
+  border: 2px solid var(--colourBG);
   /* flex-direction: row; */
   justify-content: flex-end;
   background-image: url("../images/02-portfolio-3.jpg");
@@ -172,6 +154,7 @@ item1:hover {
 
 .item4 {
   display: flex;
+  border: 2px solid var(--colourBG);
   /* flex-direction: row; */
   justify-content: flex-start;
   background-image: url("../images/02-portfolio-4.jpg");
@@ -179,6 +162,7 @@ item1:hover {
 
 .item5 {
   display: flex;
+  border: 2px solid var(--colourBG);
   /* flex-direction: row; */
   justify-content: flex-end;
   background-image: url("../images/02-run-buddy.jpg");
@@ -190,12 +174,12 @@ h3,
 h4,
 h5,
 h6 {
-  display:flex;
+  display: flex;
   justify-content: center;
   height: 80px;
   width: 100%;
   margin: 0;
-  text-align:center;
+  text-align: center;
 }
 
 p {
@@ -203,28 +187,12 @@ p {
   text-align: center;
 }
 
-/* .contact {
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items:center ;
-}
-*/
 .contact h3 {
   height: 30px;
   display: flex;
-  /* flex-direction: column;
-  align-items:space-around ; */
-  color: purple;
+  color: var(--colourBoarder);
   font-weight: bolder;
 }
-/*
-.contact p {
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .footer {
   display: flex;
@@ -233,29 +201,27 @@ p {
   color: var(--colourBoarder);
   height: 100px;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .medias {
   display: flex;
   flex-direction: row;
-  /* text-align: left; */
   justify-content: space-evenly;
-  /* align-items: flex-end; */
   width: 100%;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-.footer .fb {
+.footer .ln {
   color: greenyellow;
 }
 
-.footer .tw {
+.footer .bs {
   color: greenyellow;
 }
 
 .footer .ig {
   color: greenyellow;
+  background-position-x: center;
 }
 
 
@@ -263,19 +229,22 @@ p {
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 /* @media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow *//*
+  /* on tablets, set columns to only be 50% of the width and not grow */
+/*
   .content-grid {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  /* select the last child to grow to full width if it has space to grow *//*
+  /* select the last child to grow to full width if it has space to grow */
+/*
   .contact {
     flex-grow: 1;
   }
 }
 
-/* media query for larger screens *//*
+/* media query for larger screens */
+/*
 @media screen and (min-width: 992px) {
   header {
     width: 75%;
