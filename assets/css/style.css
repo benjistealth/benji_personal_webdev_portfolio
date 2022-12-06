@@ -12,8 +12,8 @@
 }
 
 body {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   margin: 0px;
   padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -23,12 +23,9 @@ body {
 
 header {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
   height: 100px;
   width: 100%;
-  /* background-color: var(--colourBG); */
   color: var(--colourBright);
   background-image: url("../images/02-hero-bg.jpg");
 }
@@ -39,11 +36,11 @@ header {
   width: 100%;
   height: 15 px;
   justify-content: center;
-  /* align-items: center; */
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.869);
 }
 
-.nav  a {
+.nav a {
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -56,25 +53,19 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  height: 150px;
-  order: 1;
 }
 
-.about,
-h1,
-h2 {
-  font-size: xx-large;
-  color: var(--colourBright);
+about h1 {
+  font-size: x-large;
 }
 
 li {
   display: flex;
   color: var(--colourBG);
-  font-size:large;
-  flex-wrap: wrap;
+  font-size: large;
 }
 
-img {
+.about img {
   display: flex;
   height: 150px;
   width: 150px;
@@ -85,36 +76,77 @@ img {
   margin: 0px 0%;
   display: grid;
   justify-content: center;
+  font-weight: bold;
   min-height: 500px;
   height: 70vh;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "item2 item3"
-  "item4 item5";
+    "item2 item3"
+    "item4 item5";
 }
 
+.top-left {
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.bottom-left {
+  font-weight: bold;
+  position: absolute;
+  bottom: 60px;
+  left: 16px;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+}
+
+
 .item1 {
+  position: relative;
+  border: 2px solid var(--colourBG);
+  background-color: var(--colourBG);
+  color: var(--colourBoarder);
+  transition: all 0.5s ease-in-out;
+}
+
+item1:hover {
+  border-color: blue;
+}
+
+.item1 img {
   display: flex;
   flex-direction: row;
   color: var(--colourBG);
   width: 100%;
   height: 250px;
-  /* justify-content: flex-start; */
-  background-image: url("../images/02-portfolio-1.jpg");
-  /* outline: 2px var(--colourBoarder);
-  outline-offset: -2px;
-  transition: all 0.5s ease-in-out; */
+  font-weight: bold;
 }
 
 .item2 {
   display: flex;
-  /* flex-direction: row; */
-  background-image: url("../images/02-portfolio-2.jpg");
+  position: relative;
+  color: var(--colourBG);
+  border: 2px solid var(--colourBG);
+  font-weight: bold;
+}
+
+.item2 img {
+  display: flex;
+  color: var(--colourBG);
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
 }
 
 .item3 {
   display: flex;
+  border: 2px solid var(--colourBG);
   /* flex-direction: row; */
   justify-content: flex-end;
   background-image: url("../images/02-portfolio-3.jpg");
@@ -122,6 +154,7 @@ img {
 
 .item4 {
   display: flex;
+  border: 2px solid var(--colourBG);
   /* flex-direction: row; */
   justify-content: flex-start;
   background-image: url("../images/02-portfolio-4.jpg");
@@ -129,6 +162,7 @@ img {
 
 .item5 {
   display: flex;
+  border: 2px solid var(--colourBG);
   /* flex-direction: row; */
   justify-content: flex-end;
   background-image: url("../images/02-run-buddy.jpg");
@@ -140,12 +174,12 @@ h3,
 h4,
 h5,
 h6 {
-  display:flex;
+  display: flex;
   justify-content: center;
   height: 80px;
   width: 100%;
   margin: 0;
-  text-align:center;
+  text-align: center;
 }
 
 p {
@@ -153,27 +187,41 @@ p {
   text-align: center;
 }
 
-.contact {
+.contact h3 {
   height: 30px;
   display: flex;
-  flex-direction: column;
-  align-items:center ;
-}
-
-.contact h2 {
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items:center ;
-  color: purple;
+  color: var(--colourBoarder);
   font-weight: bolder;
 }
 
-.contact p {
-  height: 30px;
+.footer {
   display: flex;
   flex-direction: column;
+  background-color: black;
+  color: var(--colourBoarder);
+  height: 100px;
   align-items: center;
+}
+
+.medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  text-decoration: none;
+}
+
+.footer .ln {
+  color: greenyellow;
+}
+
+.footer .bs {
+  color: greenyellow;
+}
+
+.footer .ig {
+  color: greenyellow;
+  background-position-x: center;
 }
 
 
@@ -181,25 +229,28 @@ p {
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 /* @media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow *//*
+  /* on tablets, set columns to only be 50% of the width and not grow */
+/*
   .content-grid {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  /* select the last child to grow to full width if it has space to grow *//*
+  /* select the last child to grow to full width if it has space to grow */
+/*
   .contact {
     flex-grow: 1;
   }
 }
 
-/* media query for larger screens *//*
+/* media query for larger screens */
+/*
 @media screen and (min-width: 992px) {
   header {
     width: 75%;
   }
 
-  .card-column {
+  .content-grid {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
